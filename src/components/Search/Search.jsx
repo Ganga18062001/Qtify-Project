@@ -23,11 +23,8 @@ const Search = ({ data, page }) => {
       <div className={navbarStyles.searchField}>
         <input
           type="search"
-          placeholder={
-            page === "home"
-              ? "Search an Album of Your Choice"
-              : "Search a Song of Your Choice"
-          }
+          role="searchbox"
+          placeholder="search"
           value={value}
           onChange={handleInput}
         />

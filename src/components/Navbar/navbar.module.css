@@ -19,6 +19,8 @@
 .img {
     width: 70px;
     height: 35px;
+    margin-left: 1rem;
+    cursor: pointer;
 }
 
 

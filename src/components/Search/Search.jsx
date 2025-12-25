@@ -7,10 +7,11 @@ const Search = ({ data, page }) => {
   let [value, setValue] = useState("");
   let [search, setSearch] = useState([]);
   const handleInput = (e) => {
-    setValue(e.target.value);
+    let inputValue = e.target.value;
+    setValue(inputValue);
 
     let arr = data.filter((album) => {
-      return album.title.toLowerCase().includes(value.toLowerCase());
+      return album.title.toLowerCase().includes(inputValue.toLowerCase());
     });
     setSearch(arr);
   };

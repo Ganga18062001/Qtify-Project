@@ -45,7 +45,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar data={topAlbums.concat(newAlbums)} page="home" songsData={songs} />
       <Hero />
       <Section title="Top Albums" data={topAlbums} type="album" />
       <Section title="New Albums" data={newAlbums} type="album" />

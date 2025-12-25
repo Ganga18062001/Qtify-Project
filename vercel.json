@@ -1,4 +1,6 @@
 {
-  "version": 2,
-  "public": true
+  "version": 1,
+  "public": true,
+  "buildCommand": "npm run build",
+  "installCommand": "npm install"
 }

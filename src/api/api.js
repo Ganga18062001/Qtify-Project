@@ -2,10 +2,10 @@ import axios from "axios";
 
 const config = {
     endpoint: {
-        TopAlbum: "https://qtify-backend-labs.crio.do/albums/top",
-        NewAlbum: "https://qtify-backend-labs.crio.do/albums/new",
-        Songs: "https://qtify-backend-labs.crio.do/songs",
-        genres: "https://qtify-backend-labs.crio.do/genres",
+        TopAlbum: "https://qtify-backend.labs.crio.do/albums/top",
+        NewAlbum: "https://qtify-backend.labs.crio.do/albums/new",
+        Songs: "https://qtify-backend.labs.crio.do/songs",
+        genres: "https://qtify-backend.labs.crio.do/genres",
     },
 };
 

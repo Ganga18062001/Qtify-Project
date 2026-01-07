@@ -13,7 +13,7 @@ const Carousel = ({ data, component }) => {
     <div className={styles.carouselWrapper}>
       <Swiper
         initialSlide={0}
-        modules={{ Navigation }}
+        modules={[Navigation]}
         slidesPerView={"auto"}
         spaceBetween={"40"}
         allowTouchMove

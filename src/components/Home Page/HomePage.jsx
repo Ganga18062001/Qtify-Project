@@ -7,6 +7,9 @@ import Feedback from "../Feedback/Feedback";
 import Footer from "../Footer/Footer";
 import { fetchTopAlbum, fetchNewAlbum, fetchSongs, fetchGenres } from "../../api/api";
 
+const apis = fetchNewAlbum()
+
+console.log("top albumss",apis)
 const HomePage = () => {
   const [topAlbums, setTopAlbums] = useState([]);
   const [newAlbums, setNewAlbums] = useState([]);
@@ -18,8 +21,10 @@ const HomePage = () => {
       try {
         const top = await fetchTopAlbum();
         setTopAlbums(top);
+        console.log("-----",top)
       } catch (err) {
         console.error("Failed to fetch top albums:", err);
+        console.log("+++++")
       }
       try {
         const newA = await fetchNewAlbum();

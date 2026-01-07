@@ -25,7 +25,7 @@ const Search = ({ data, page }) => {
         <input
           type="search"
           role="searchbox"
-          placeholder="search"
+          placeholder="Search a song"
           value={value}
           onChange={handleInput}
         />
